@@ -56,11 +56,11 @@ class ViewController: UIViewController {
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
         
-        //tipLabel.text = currencyFormatter.string(from :NSNumber(tip))
-        //totalLabel.text = currencyFormatter.string(from: total)
+       tipLabel.text = currencyFormatter.string(from: NSNumber(value: tip))
+       totalLabel.text = currencyFormatter.string(from: NSNumber(value: total))
         
-        tipLabel.text=String.init(format: "%.2f", tip)
-        totalLabel.text=String.init(format: "%.2f", total)
+       //tipLabel.text=String.init(format: "%.2f", tip)
+       //totalLabel.text=String.init(format: "%.2f", total)
         
         fadeInTotal()
     }
